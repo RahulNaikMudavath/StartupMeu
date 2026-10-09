@@ -1,0 +1,437 @@
+/* ==========================================================================
+   CareerFlow — Application Styling
+   ========================================================================== */
+
+/* ── App Layout ──────────────────────────────────────────────────────────── */
+.app {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.app__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 8px;
+  letter-spacing: -0.025em;
+}
+
+.app__subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.app__error-banner {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.app__main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ── Stats Panel ─────────────────────────────────────────────────────────── */
+.stats-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.stats-panel__loading,
+.stats-panel__error {
+  text-align: center;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px dashed #cbd5e1;
+  color: #64748b;
+}
+
+.stats-panel__error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #dc2626;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card__label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+}
+
+.stat-card__count {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ── Application Form ─────────────────────────────────────────────────────── */
+.application-form {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.application-form__title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 20px;
+}
+
+.application-form__field {
+  margin-bottom: 18px;
+}
+
+.application-form__label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.application-form__label span {
+  color: #ef4444;
+}
+
+.application-form__input,
+.application-form__select,
+.application-form__textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.application-form__input:focus,
+.application-form__select:focus,
+.application-form__textarea:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.application-form__input--error {
+  border-color: #ef4444 !important;
+  background: #fef2f2 !important;
+}
+
+.application-form__error {
+  color: #ef4444;
+  font-size: 0.825rem;
+  margin: 6px 0 0;
+  font-weight: 500;
+}
+
+.application-form__textarea {
+  resize: vertical;
+}
+
+.application-form__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.application-form__btn {
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.application-form__btn--submit {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.application-form__btn--submit:hover {
+  background: #4f46e5;
+}
+
+.app__cancel-edit {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #64748b;
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.app__cancel-edit:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* ── Search and Filter Controls ──────────────────────────────────────────── */
+.app__section--controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  flex: 1 1 280px;
+}
+
+.search-bar__input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.search-bar__input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.status-filter {
+  flex: 0 0 180px;
+}
+
+.status-filter__select {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.status-filter__select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* ── Application List & Cards ────────────────────────────────────────────── */
+.application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.application-list--empty,
+.application-list--loading,
+.application-list--error {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.application-list--error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #dc2626;
+}
+
+.application-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.application-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
+}
+
+.application-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.application-card__position {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.application-card__company {
+  font-size: 0.95rem;
+  color: #475569;
+  margin: 0;
+}
+
+.application-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.application-card__status {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.application-card--applied .application-card__status {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.application-card--interview .application-card__status {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.application-card--selected .application-card__status {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.application-card--rejected .application-card__status {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.application-card__date {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.application-card__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.application-card__btn {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.application-card__btn--edit {
+  background: #f1f5f9;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+.application-card__btn--edit:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.application-card__btn--delete {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.application-card__btn--delete:hover {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* ── Mobile Responsiveness ───────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .app {
+    padding: 20px 12px;
+  }
+
+  .application-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .application-card__actions {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .application-card__btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .status-filter {
+    flex: 1 1 100%;
+  }
+}
