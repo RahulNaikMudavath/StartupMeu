@@ -252,9 +252,13 @@ npm run build
 
 ---
 
-## 🤖 AI Development Tool & Experience: Kiro
+## 🤖 AI Development Tool: Kiro
 
-### Overview & Methodology
+### Tool Selection: Code0 vs Kiro
+- **Selected AI Tool**: **[Kiro](https://app.kiro.de/)**
+- The project was planned and executed using Kiro's specification-driven framework located in `.kiro/specs/careerflow/`.
+
+### AI Development Experience
 During the development of CareerFlow, **[Kiro](https://app.kiro.de/)** was utilized as the primary AI development tool. Rather than treating AI as a simple code autocomplete engine, we adopted a **Specification-Driven Development (SDD)** workflow enabled by Kiro:
 
 1. **Spec Generation (`.kiro/specs/careerflow/`)**:
@@ -264,29 +268,29 @@ During the development of CareerFlow, **[Kiro](https://app.kiro.de/)** was utili
      - [`tasks.md`](careerflow/.kiro/specs/careerflow/tasks.md): An incremental 15-task development plan mapping subtasks to requirement IDs and property-based verification checks.
 2. **Spec Adherence & Guardrails**:
    - Development progressed phase-by-phase following the task matrix.
-   - Any refactoring was vetted against the design constraints to prevent scope drift or regression.
+   - Refactoring and debugging were verified against the design constraints to prevent scope drift or regression.
 
 ---
 
-### 3–5 Specific Tasks Accelerated by Kiro
+### Specific Tasks Where the AI Tool (Kiro) Was Used (5 Key Tasks)
 
 #### 1. Specification & Task Decomposition (Architecture Planning)
 - **What was done**: Kiro broke down the MERN project from high-level user stories into an incremental 15-step blueprint in [`tasks.md`](careerflow/.kiro/specs/careerflow/tasks.md).
 - **Impact**: Allowed the project to be executed feature-by-feature in logical, modular chunks with dedicated checkpoints, ensuring no edge case (such as route precedence or cast errors) was omitted.
 
-#### 2. Backend Controller & MongoDB Aggregation Optimization
+#### 2. Backend Controller & MongoDB Aggregation Optimization (API Creation & Database Integration)
 - **What was done**: Kiro formulated the `getStats` controller in [`applicationController.js`](careerflow/backend/controllers/applicationController.js) to run five parallel count operations via `Promise.all([Application.countDocuments(...)])` rather than pulling all records into memory or running serial roundtrips.
 - **Impact**: Delivered $O(1)$ memory consumption and reduced database latency for dashboard metric calculations.
 
-#### 3. Frontend Component Modularization & Reactive State Architecture
+#### 3. Frontend Component Modularization & Reactive State Architecture (Component Development)
 - **What was done**: Designed a modular component hierarchy (`Stats_Panel`, `Application_Card`, `Application_List`, `Application_Form`, `SearchBar`, `StatusFilter`). Kiro guided the state design in [`App.jsx`](careerflow/frontend/src/App.jsx) so that search queries and filter selections derive the visible list dynamically in-memory without making redundant backend requests.
 - **Impact**: High UI responsiveness with instant zero-latency filtering, while preserving data synchronization with the server on CRUD mutations.
 
-#### 4. Critical Debugging: Resolving MongoDB 7.7.0 ESM / Jest VM Environment Hang
+#### 4. Critical Debugging: Resolving MongoDB 7.7.0 ESM / Jest VM Environment Hang (Debugging)
 - **What was done**: During backend integration testing ([Task 14.1](careerflow/.kiro/specs/careerflow/tasks.md)), the test suite hung due to a known conflict where MongoDB driver 7.7+ uses dynamic `await import('os')` inside Jest's simulated VM context.
 - **Problem Solving with Kiro**: Instead of unsustainably modifying files inside `node_modules`, we investigated the driver internals and determined that `mongoose.connect()` accepts custom runtime adapters. We supplied `{ runtimeAdapters: { os } }` directly inside [`lifecycle.test.js`](careerflow/backend/tests/integration/lifecycle.test.js), achieving a clean, permanent, zero-hack fix that restored instant test execution.
 
-#### 5. Property-Based Testing & Quality Assurance
+#### 5. Invariant Property-Based Testing & Quality Assurance (Testing & Refactoring)
 - **What was done**: Using `fast-check` alongside Jest and Vitest, Kiro designed invariant round-trip property tests (generating 100 randomized payloads per run) to guarantee that arbitrary valid characters, UTF-8 positions, and timestamps survive the full API and database serialization lifecycle without mutation or loss.
 - **Impact**: High test confidence beyond standard happy-path unit tests.
 
