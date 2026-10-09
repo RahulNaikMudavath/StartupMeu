@@ -2,11 +2,20 @@ import StatCard from './StatCard';
 
 function Stats_Panel({ stats, loading, error }) {
   if (loading) {
-    return <p className="stats-panel__loading">Loading statistics…</p>;
+    return (
+      <div className="stats-panel stats-panel--loading">
+        <div className="stats-panel__spinner" aria-hidden="true"></div>
+        <p className="stats-panel__loading">Loading statistics…</p>
+      </div>
+    );
   }
 
   if (error) {
-    return <p className="stats-panel__error">{error}</p>;
+    return (
+      <div className="stats-panel stats-panel--error">
+        <p className="stats-panel__error">{error}</p>
+      </div>
+    );
   }
 
   return (
