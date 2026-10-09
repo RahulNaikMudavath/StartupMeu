@@ -1,10 +1,3 @@
-/**
- * StatusFilter — controlled select component for filtering applications by status.
- *
- * Props:
- *   value          {string}   – currently selected filter value (controlled)
- *   onFilterChange {Function} – called with the new selected value on change
- */
 function StatusFilter({ value, onFilterChange }) {
   return (
     <div className="status-filter">

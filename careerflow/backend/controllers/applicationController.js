@@ -1,10 +1,5 @@
 const Application = require('../models/Application');
 
-/**
- * GET /api/applications
- * Returns all applications as a JSON array.
- * Requirements: 2.2, 9.5
- */
 const getAllApplications = async (req, res, next) => {
   try {
     const applications = await Application.find({});
@@ -14,11 +9,6 @@ const getAllApplications = async (req, res, next) => {
   }
 };
 
-/**
- * GET /api/applications/stats
- * Returns aggregate counts by status.
- * Requirements: 8.2, 9.5
- */
 const getStats = async (req, res, next) => {
   try {
     const [total, applied, interview, selected, rejected] = await Promise.all([
@@ -35,11 +25,6 @@ const getStats = async (req, res, next) => {
   }
 };
 
-/**
- * GET /api/applications/:id
- * Returns a single application by ID.
- * Requirements: 3.2, 3.3, 9.5
- */
 const getApplicationById = async (req, res, next) => {
   try {
     const { id } = req.params;
@@ -56,11 +41,6 @@ const getApplicationById = async (req, res, next) => {
   }
 };
 
-/**
- * POST /api/applications
- * Creates a new application from req.body and persists it.
- * Requirements: 1.1, 1.5, 9.5
- */
 const createApplication = async (req, res, next) => {
   try {
     const application = new Application(req.body);
@@ -74,11 +54,6 @@ const createApplication = async (req, res, next) => {
   }
 };
 
-/**
- * PUT /api/applications/:id
- * Updates an existing application by ID.
- * Requirements: 4.2, 4.4, 9.5
- */
 const updateApplication = async (req, res, next) => {
   try {
     const { id } = req.params;
@@ -101,11 +76,6 @@ const updateApplication = async (req, res, next) => {
   }
 };
 
-/**
- * DELETE /api/applications/:id
- * Permanently removes an application by ID.
- * Requirements: 5.2, 5.3, 9.5
- */
 const deleteApplication = async (req, res, next) => {
   try {
     const { id } = req.params;

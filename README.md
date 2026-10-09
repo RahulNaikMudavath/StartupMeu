@@ -235,7 +235,7 @@ npm test
 Verifies component rendering, user interactions, form validation, filter logic, and status card displays:
 ```bash
 cd careerflow/frontend
-npm run test:unit
+npm test
 ```
 *Expected result: 6 test suites, 24/24 tests passing.*
 
@@ -307,6 +307,6 @@ During the development of CareerFlow, **[Kiro](https://app.kiro.de/)** was utili
 
 ## 👤 Author & Contact
 - **Developer**: Rahul Naik Mudavath
-- **Email**: [rahulnaikmudavath47@gmail.com](mailto:rahulnaikmudavath47@gmail.com)
+- **Email**: [rahulnaikm2003@gmail.com](mailto:rahulnaikm2003@gmail.com)
 - **Repository**: [https://github.com/RahulNaikMudavath/StartupMeu](https://github.com/RahulNaikMudavath/StartupMeu)
 - **Organization Submission**: StartupMeu Evaluation Task

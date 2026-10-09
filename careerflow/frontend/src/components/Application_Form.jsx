@@ -1,23 +1,6 @@
 import { useState, useEffect } from 'react';
 import { isNonBlank, isValidUrl } from '../utils/validation';
 
-/**
- * Application_Form — controlled form for creating or editing a job/internship application.
- *
- * Props:
- *   onSubmit    {Function}       – called with the draft data object when validation passes
- *   editTarget  {Object|null}    – when provided, pre-populates form fields for editing;
- *                                  should have the same shape as an Application record
- *
- * Manages local draft state for:
- *   company, position, status (default 'Applied'), applicationDate, jobUrl, notes
- *
- * Validation (Requirements 1.4, 1.6):
- *   - company:  must be non-blank
- *   - position: must be non-blank
- *   - jobUrl:   if provided, must be a well-formed URL (parseable by new URL())
- */
-
 const STATUS_OPTIONS = ['Applied', 'Interview', 'Selected', 'Rejected'];
 
 const EMPTY_DRAFT = {
@@ -33,10 +16,8 @@ function Application_Form({ onSubmit, editTarget }) {
   const [draft, setDraft] = useState(EMPTY_DRAFT);
   const [errors, setErrors] = useState({});
 
-  // Re-populate form when editTarget changes (Requirement 4.3)
   useEffect(() => {
     if (editTarget) {
-      // Normalise applicationDate from ISO string to yyyy-MM-dd for <input type="date">
       const rawDate = editTarget.applicationDate
         ? new Date(editTarget.applicationDate).toISOString().split('T')[0]
         : '';
@@ -55,11 +36,9 @@ function Application_Form({ onSubmit, editTarget }) {
     setErrors({});
   }, [editTarget]);
 
-  // Generic change handler — keeps draft in sync with inputs
   function handleChange(e) {
     const { name, value } = e.target;
     setDraft((prev) => ({ ...prev, [name]: value }));
-    // Clear the error for a field as soon as the user starts correcting it
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: '' }));
     }
@@ -108,7 +87,6 @@ function Application_Form({ onSubmit, editTarget }) {
         {isEditing ? 'Edit Application' : 'Add Application'}
       </h2>
 
-      {/* Company */}
       <div className="application-form__field">
         <label className="application-form__label" htmlFor="company">
           Company <span aria-hidden="true">*</span>
@@ -131,7 +109,6 @@ function Application_Form({ onSubmit, editTarget }) {
         )}
       </div>
 
-      {/* Position */}
       <div className="application-form__field">
         <label className="application-form__label" htmlFor="position">
           Position <span aria-hidden="true">*</span>
@@ -154,7 +131,6 @@ function Application_Form({ onSubmit, editTarget }) {
         )}
       </div>
 
-      {/* Status */}
       <div className="application-form__field">
         <label className="application-form__label" htmlFor="status">
           Status <span aria-hidden="true">*</span>
@@ -175,7 +151,6 @@ function Application_Form({ onSubmit, editTarget }) {
         </select>
       </div>
 
-      {/* Application Date */}
       <div className="application-form__field">
         <label className="application-form__label" htmlFor="applicationDate">
           Application Date <span aria-hidden="true">*</span>
@@ -191,7 +166,6 @@ function Application_Form({ onSubmit, editTarget }) {
         />
       </div>
 
-      {/* Job URL (optional) */}
       <div className="application-form__field">
         <label className="application-form__label" htmlFor="jobUrl">
           Job URL
@@ -213,7 +187,6 @@ function Application_Form({ onSubmit, editTarget }) {
         )}
       </div>
 
-      {/* Notes (optional) */}
       <div className="application-form__field">
         <label className="application-form__label" htmlFor="notes">
           Notes
@@ -229,7 +202,6 @@ function Application_Form({ onSubmit, editTarget }) {
         />
       </div>
 
-      {/* Submit */}
       <div className="application-form__actions">
         <button
           type="submit"

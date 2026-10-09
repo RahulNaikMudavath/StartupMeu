@@ -9,18 +9,14 @@ dotenv.config();
 
 const app = express();
 
-// Core middleware
 app.use(cors());
 app.use(express.json());
 
-// Routes
 const applicationRoutes = require('./routes/applicationRoutes');
 app.use('/api/applications', applicationRoutes);
 
-// Global error-handler (must be last)
 app.use(errorHandler);
 
-// DB connection + server start
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 

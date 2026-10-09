@@ -1,13 +1,5 @@
 import Application_Card from './Application_Card';
 
-/**
- * Application_List — renders a list of job/internship application cards.
- *
- * Props:
- *   applications {Array}    – array of application records to display
- *   onEdit       {Function} – passed through to each Application_Card
- *   onDelete     {Function} – passed through to each Application_Card
- */
 function Application_List({ applications, loading, error, onEdit, onDelete }) {
   if (loading) {
     return (

@@ -10,8 +10,6 @@ const {
   deleteApplication,
 } = require('../controllers/applicationController');
 
-// NOTE: /stats must be registered before /:id to prevent Express
-// from treating the literal string "stats" as a dynamic :id parameter.
 router.get('/stats', getStats);
 router.get('/', getAllApplications);
 router.get('/:id', getApplicationById);

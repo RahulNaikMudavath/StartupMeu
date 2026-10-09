@@ -17,6 +17,6 @@ npm test        # Runs Jest integration & property tests
 cd frontend
 npm install
 npm run dev        # Starts Vite dev server on http://localhost:5173
-npm run test:unit  # Runs Vitest component & unit tests
-npm run build      # Production bundle build
+npm test            # Runs Vitest component & unit tests
+npm run build       # Production bundle build
 ```

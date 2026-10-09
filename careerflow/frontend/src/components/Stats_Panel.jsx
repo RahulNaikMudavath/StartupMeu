@@ -1,13 +1,5 @@
 import StatCard from './StatCard';
 
-/**
- * Stats_Panel — displays aggregated application statistics.
- *
- * Props:
- *   stats   {Object}  – { total, applied, interview, selected, rejected }
- *   loading {boolean} – when true, renders a loading indicator
- *   error   {string|null} – when truthy, renders the error message instead of stats
- */
 function Stats_Panel({ stats, loading, error }) {
   if (loading) {
     return <p className="stats-panel__loading">Loading statistics…</p>;

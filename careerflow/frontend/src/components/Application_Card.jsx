@@ -1,20 +1,6 @@
-/**
- * Application_Card — displays a summary of a single job/internship application.
- *
- * Props:
- *   application {Object}   – the application record to display
- *     .company         {string} – company name
- *     .position        {string} – role / position title
- *     .status          {string} – one of 'Applied' | 'Interview' | 'Selected' | 'Rejected'
- *     .applicationDate {string} – ISO date string
- *     ._id             {string} – unique identifier
- *   onEdit   {Function} – called with the full application object when Edit is clicked
- *   onDelete {Function} – called with application._id when Delete is clicked
- */
 function Application_Card({ application, onEdit, onDelete }) {
   const { company, position, status, applicationDate, _id } = application;
 
-  // Format the date for display (e.g. "Jan 15, 2025")
   const formattedDate = applicationDate
     ? new Date(applicationDate).toLocaleDateString('en-US', {
         year: 'numeric',
