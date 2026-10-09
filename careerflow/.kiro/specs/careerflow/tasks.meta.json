@@ -1,0 +1,394 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "2.1 Create `backend/models/Application.js`": [
+      {
+        "executionId": "7a67190c-8c95-48a7-8a39-67dd18f82ea2",
+        "chatSessionId": "sess_1714645e-2991-4ea9-bf5a-85c14168bf6e",
+        "timestamp": 1791522821260
+      },
+      {
+        "executionId": "7a67190c-8c95-48a7-8a39-67dd18f82ea2",
+        "chatSessionId": "sess_1714645e-2991-4ea9-bf5a-85c14168bf6e",
+        "timestamp": 1791522845273
+      }
+    ],
+    "2. Backend — Application Mongoose model": [
+      {
+        "executionId": "7a67190c-8c95-48a7-8a39-67dd18f82ea2",
+        "chatSessionId": "sess_1714645e-2991-4ea9-bf5a-85c14168bf6e",
+        "timestamp": 1791522845401
+      }
+    ],
+    "3.1 Create `backend/server.js`": [
+      {
+        "executionId": "679b1149-800a-4327-b9ce-87c775197d95",
+        "chatSessionId": "sess_3ef331ff-2b0f-46a6-8a50-ef08cffacabc",
+        "timestamp": 1791523064297
+      },
+      {
+        "executionId": "679b1149-800a-4327-b9ce-87c775197d95",
+        "chatSessionId": "sess_3ef331ff-2b0f-46a6-8a50-ef08cffacabc",
+        "timestamp": 1791523160451
+      }
+    ],
+    "3.2 Create `backend/middleware/errorHandler.js`": [
+      {
+        "executionId": "679b1149-800a-4327-b9ce-87c775197d95",
+        "chatSessionId": "sess_3ef331ff-2b0f-46a6-8a50-ef08cffacabc",
+        "timestamp": 1791523067587
+      },
+      {
+        "executionId": "679b1149-800a-4327-b9ce-87c775197d95",
+        "chatSessionId": "sess_3ef331ff-2b0f-46a6-8a50-ef08cffacabc",
+        "timestamp": 1791523164497
+      }
+    ],
+    "3. Backend — Express server and DB connection": [
+      {
+        "executionId": "679b1149-800a-4327-b9ce-87c775197d95",
+        "chatSessionId": "sess_3ef331ff-2b0f-46a6-8a50-ef08cffacabc",
+        "timestamp": 1791523164587
+      }
+    ],
+    "4.1 Create `backend/controllers/applicationController.js` — `getAllApplications`": [
+      {
+        "executionId": "885f8611-41dd-436e-9211-1553478ad747",
+        "chatSessionId": "sess_93df5edc-3b08-423b-b035-eaafa9cbb86b",
+        "timestamp": 1791523271349
+      },
+      {
+        "executionId": "885f8611-41dd-436e-9211-1553478ad747",
+        "chatSessionId": "sess_93df5edc-3b08-423b-b035-eaafa9cbb86b",
+        "timestamp": 1791523303554
+      }
+    ],
+    "4.2 Create `getStats` controller function": [
+      {
+        "executionId": "d78d2c75-b51b-4dc4-a912-a4cbab93a2f7",
+        "chatSessionId": "sess_ecc1add7-8c5a-442b-a2a3-ca6a4f8849d6",
+        "timestamp": 1791523435972
+      },
+      {
+        "executionId": "d78d2c75-b51b-4dc4-a912-a4cbab93a2f7",
+        "chatSessionId": "sess_ecc1add7-8c5a-442b-a2a3-ca6a4f8849d6",
+        "timestamp": 1791523456724
+      }
+    ],
+    "4.4 Create `getApplicationById` controller function": [
+      {
+        "executionId": "0c0fe1d2-5354-4b03-b2b5-c6d4a13c897c",
+        "chatSessionId": "sess_4ea71113-c8df-493b-bf44-9d1546eefa78",
+        "timestamp": 1791523583464
+      },
+      {
+        "executionId": "0c0fe1d2-5354-4b03-b2b5-c6d4a13c897c",
+        "chatSessionId": "sess_4ea71113-c8df-493b-bf44-9d1546eefa78",
+        "timestamp": 1791523609556
+      }
+    ],
+    "4.5 Create `createApplication` controller function": [
+      {
+        "executionId": "4a4b7058-2f95-4b6a-8675-bfb488e3632b",
+        "chatSessionId": "sess_e96835b9-222a-43e2-a6c3-68a75f0f4f8f",
+        "timestamp": 1791523725580
+      },
+      {
+        "executionId": "4a4b7058-2f95-4b6a-8675-bfb488e3632b",
+        "chatSessionId": "sess_e96835b9-222a-43e2-a6c3-68a75f0f4f8f",
+        "timestamp": 1791523750050
+      }
+    ],
+    "4.7 Create `updateApplication` controller function": [
+      {
+        "executionId": "db032386-06ce-4b4d-ae16-173e201693b4",
+        "chatSessionId": "sess_b64028b6-00ca-4038-a4aa-87c5ad093a1c",
+        "timestamp": 1791523797133
+      },
+      {
+        "executionId": "db032386-06ce-4b4d-ae16-173e201693b4",
+        "chatSessionId": "sess_b64028b6-00ca-4038-a4aa-87c5ad093a1c",
+        "timestamp": 1791523825936
+      }
+    ],
+    "4.9 Create `deleteApplication` controller function": [
+      {
+        "executionId": "9259f519-1876-4596-af4c-41f845e054be",
+        "chatSessionId": "sess_df0ffa15-35b8-446d-9a6e-a46c3628c2f9",
+        "timestamp": 1791523868818
+      },
+      {
+        "executionId": "9259f519-1876-4596-af4c-41f845e054be",
+        "chatSessionId": "sess_df0ffa15-35b8-446d-9a6e-a46c3628c2f9",
+        "timestamp": 1791523898611
+      }
+    ],
+    "4. Backend — Application controller": [
+      {
+        "executionId": "9259f519-1876-4596-af4c-41f845e054be",
+        "chatSessionId": "sess_df0ffa15-35b8-446d-9a6e-a46c3628c2f9",
+        "timestamp": 1791523898728
+      }
+    ],
+    "5.1 Create `backend/routes/applicationRoutes.js`": [
+      {
+        "executionId": "75efe495-b274-4325-8fc4-999ffb1e7821",
+        "chatSessionId": "sess_b1db2cfc-0411-4922-88a7-2a218ea31b9a",
+        "timestamp": 1791523964289
+      },
+      {
+        "executionId": "75efe495-b274-4325-8fc4-999ffb1e7821",
+        "chatSessionId": "sess_b1db2cfc-0411-4922-88a7-2a218ea31b9a",
+        "timestamp": 1791523991248
+      }
+    ],
+    "5. Backend — Routes": [
+      {
+        "executionId": "75efe495-b274-4325-8fc4-999ffb1e7821",
+        "chatSessionId": "sess_b1db2cfc-0411-4922-88a7-2a218ea31b9a",
+        "timestamp": 1791523991348
+      }
+    ],
+    "6. Backend checkpoint — Ensure all backend tests pass": [
+      {
+        "executionId": "7de2120f-9dd1-467e-ab07-751002248afa",
+        "chatSessionId": "sess_9c39fcc3-d789-4745-a58a-5ccb3c2203e3",
+        "timestamp": 1791524047334
+      },
+      {
+        "executionId": "7de2120f-9dd1-467e-ab07-751002248afa",
+        "chatSessionId": "sess_9c39fcc3-d789-4745-a58a-5ccb3c2203e3",
+        "timestamp": 1791524293511
+      }
+    ],
+    "7.1 Configure `frontend/vite.config.js`": [
+      {
+        "executionId": "fcb65ae8-a385-4f5f-8523-8b08f9bae2ea",
+        "chatSessionId": "sess_f3c3e78a-7e26-4df8-a2c1-9cc19b7ddfba",
+        "timestamp": 1791524467941
+      },
+      {
+        "executionId": "fcb65ae8-a385-4f5f-8523-8b08f9bae2ea",
+        "chatSessionId": "sess_f3c3e78a-7e26-4df8-a2c1-9cc19b7ddfba",
+        "timestamp": 1791524488602
+      }
+    ],
+    "7.2 Create `frontend/src/setupTests.js`": [
+      {
+        "executionId": "499f76c1-ff53-4fcc-94f2-4408eca340b9",
+        "chatSessionId": "sess_48018593-43cb-45ca-a53f-c5fc14c1a03d",
+        "timestamp": 1791524546235
+      },
+      {
+        "executionId": "499f76c1-ff53-4fcc-94f2-4408eca340b9",
+        "chatSessionId": "sess_48018593-43cb-45ca-a53f-c5fc14c1a03d",
+        "timestamp": 1791524568738
+      }
+    ],
+    "7.3 Create `frontend/src/services/applicationService.js`": [
+      {
+        "executionId": "a109d48b-962b-408e-9ad1-8d29b739f9ce",
+        "chatSessionId": "sess_a4c70bce-7c08-4cf5-862e-96bd92ee1b8e",
+        "timestamp": 1791524659621
+      },
+      {
+        "executionId": "a109d48b-962b-408e-9ad1-8d29b739f9ce",
+        "chatSessionId": "sess_a4c70bce-7c08-4cf5-862e-96bd92ee1b8e",
+        "timestamp": 1791524698596
+      }
+    ],
+    "7. Frontend — Vite config and service layer": [
+      {
+        "executionId": "a109d48b-962b-408e-9ad1-8d29b739f9ce",
+        "chatSessionId": "sess_a4c70bce-7c08-4cf5-862e-96bd92ee1b8e",
+        "timestamp": 1791524698696
+      }
+    ],
+    "8.1 Create `frontend/src/utils/filterApplications.js`": [
+      {
+        "executionId": "4a03ce05-2a66-4d3a-83ac-df730ca340f2",
+        "chatSessionId": "sess_6b9b7ae5-14e7-4038-9000-0b94f48ebf43",
+        "timestamp": 1791524741405
+      },
+      {
+        "executionId": "4a03ce05-2a66-4d3a-83ac-df730ca340f2",
+        "chatSessionId": "sess_6b9b7ae5-14e7-4038-9000-0b94f48ebf43",
+        "timestamp": 1791524779905
+      }
+    ],
+    "8.3 Create `frontend/src/utils/validation.js`": [
+      {
+        "executionId": "d0f2a1be-2752-4dae-8ece-3abac6c400ef",
+        "chatSessionId": "sess_1c413cee-ef08-4a00-b8ab-2c0a36803e16",
+        "timestamp": 1791524826979
+      },
+      {
+        "executionId": "d0f2a1be-2752-4dae-8ece-3abac6c400ef",
+        "chatSessionId": "sess_1c413cee-ef08-4a00-b8ab-2c0a36803e16",
+        "timestamp": 1791524850421
+      }
+    ],
+    "8. Frontend — Utility functions": [
+      {
+        "executionId": "d0f2a1be-2752-4dae-8ece-3abac6c400ef",
+        "chatSessionId": "sess_1c413cee-ef08-4a00-b8ab-2c0a36803e16",
+        "timestamp": 1791524850538
+      }
+    ],
+    "9.1 Create `frontend/src/components/StatCard.jsx`": [
+      {
+        "executionId": "fc7872b3-fae2-4cfa-8180-947125fa7459",
+        "chatSessionId": "sess_5ec85394-8eb0-4d36-bc36-e3d2aedf3ac8",
+        "timestamp": 1791524914277
+      },
+      {
+        "executionId": "fc7872b3-fae2-4cfa-8180-947125fa7459",
+        "chatSessionId": "sess_5ec85394-8eb0-4d36-bc36-e3d2aedf3ac8",
+        "timestamp": 1791524957890
+      }
+    ],
+    "9.2 Create `frontend/src/components/Stats_Panel.jsx`": [
+      {
+        "executionId": "8e01d07c-62f3-464d-ba9d-939187080f1b",
+        "chatSessionId": "sess_64855bc7-d79b-495d-87ca-57ce8859c43c",
+        "timestamp": 1791525060531
+      },
+      {
+        "executionId": "8e01d07c-62f3-464d-ba9d-939187080f1b",
+        "chatSessionId": "sess_64855bc7-d79b-495d-87ca-57ce8859c43c",
+        "timestamp": 1791525102018
+      }
+    ],
+    "9.5 Create `frontend/src/components/SearchBar.jsx`": [
+      {
+        "executionId": "40f2bcd9-fed5-461a-8014-fee4af76801f",
+        "chatSessionId": "sess_06df6ae4-d1d6-4469-ad9a-4bd286161d7e",
+        "timestamp": 1791525125013
+      },
+      {
+        "executionId": "40f2bcd9-fed5-461a-8014-fee4af76801f",
+        "chatSessionId": "sess_06df6ae4-d1d6-4469-ad9a-4bd286161d7e",
+        "timestamp": 1791525155374
+      }
+    ],
+    "9.6 Create `frontend/src/components/StatusFilter.jsx`": [
+      {
+        "executionId": "924151e9-483e-418f-89be-197f786c0f2a",
+        "chatSessionId": "sess_87ff29c7-1af7-4cde-9c75-3a5dd0a4ffaa",
+        "timestamp": 1791525183030
+      },
+      {
+        "executionId": "924151e9-483e-418f-89be-197f786c0f2a",
+        "chatSessionId": "sess_87ff29c7-1af7-4cde-9c75-3a5dd0a4ffaa",
+        "timestamp": 1791525207899
+      }
+    ],
+    "9.7 Create `frontend/src/components/Application_Card.jsx`": [
+      {
+        "executionId": "a9614957-74ba-4634-be15-1aad6c79247c",
+        "chatSessionId": "sess_3a6d6a2c-ec2e-444d-a06b-be5593281ee0",
+        "timestamp": 1791525244761
+      },
+      {
+        "executionId": "a9614957-74ba-4634-be15-1aad6c79247c",
+        "chatSessionId": "sess_3a6d6a2c-ec2e-444d-a06b-be5593281ee0",
+        "timestamp": 1791525302053
+      }
+    ],
+    "9. Frontend — Presentational components": [
+      {
+        "executionId": "a9614957-74ba-4634-be15-1aad6c79247c",
+        "chatSessionId": "sess_3a6d6a2c-ec2e-444d-a06b-be5593281ee0",
+        "timestamp": 1791525302158
+      }
+    ],
+    "10.1 Create `frontend/src/components/Application_List.jsx`": [
+      {
+        "executionId": "aa13333b-4589-48f8-9ead-75f816201637",
+        "chatSessionId": "sess_bd8666da-644a-4a4e-9e53-735e9194c9a2",
+        "timestamp": 1791525315796
+      },
+      {
+        "executionId": "aa13333b-4589-48f8-9ead-75f816201637",
+        "chatSessionId": "sess_bd8666da-644a-4a4e-9e53-735e9194c9a2",
+        "timestamp": 1791525346128
+      }
+    ],
+    "10. Frontend — `Application_List` component": [
+      {
+        "executionId": "aa13333b-4589-48f8-9ead-75f816201637",
+        "chatSessionId": "sess_bd8666da-644a-4a4e-9e53-735e9194c9a2",
+        "timestamp": 1791525346223
+      }
+    ],
+    "11.1 Create `frontend/src/components/Application_Form.jsx`": [
+      {
+        "executionId": "0e2b7c98-f831-45d3-b605-8e184e0415ca",
+        "chatSessionId": "sess_91a46ea0-c048-4260-adf1-6e9610fa31d5",
+        "timestamp": 1791525374115
+      },
+      {
+        "executionId": "0e2b7c98-f831-45d3-b605-8e184e0415ca",
+        "chatSessionId": "sess_91a46ea0-c048-4260-adf1-6e9610fa31d5",
+        "timestamp": 1791525503972
+      }
+    ],
+    "11. Frontend — `Application_Form` component": [
+      {
+        "executionId": "0e2b7c98-f831-45d3-b605-8e184e0415ca",
+        "chatSessionId": "sess_91a46ea0-c048-4260-adf1-6e9610fa31d5",
+        "timestamp": 1791525504056
+      }
+    ],
+    "12.1 Create `frontend/src/App.jsx`": [
+      {
+        "executionId": "2036cb95-e189-4d07-b49c-7ef97124dc18",
+        "chatSessionId": "sess_cad24e60-9b31-4eb5-9995-b45aef0907d5",
+        "timestamp": 1791525804122
+      },
+      {
+        "executionId": "2036cb95-e189-4d07-b49c-7ef97124dc18",
+        "chatSessionId": "sess_cad24e60-9b31-4eb5-9995-b45aef0907d5",
+        "timestamp": 1791526041142
+      }
+    ],
+    "12.3 Create `frontend/src/main.jsx`": [
+      {
+        "executionId": "302c2ce9-8a18-4b5f-9c6f-4ac7cfd75704",
+        "chatSessionId": "sess_321457fa-1f91-4826-8000-6e47e16f45f7",
+        "timestamp": 1791526102790
+      },
+      {
+        "executionId": "302c2ce9-8a18-4b5f-9c6f-4ac7cfd75704",
+        "chatSessionId": "sess_321457fa-1f91-4826-8000-6e47e16f45f7",
+        "timestamp": 1791526154526
+      }
+    ],
+    "12. Frontend — Root `App` component and state management": [
+      {
+        "executionId": "302c2ce9-8a18-4b5f-9c6f-4ac7cfd75704",
+        "chatSessionId": "sess_321457fa-1f91-4826-8000-6e47e16f45f7",
+        "timestamp": 1791526154595
+      }
+    ],
+    "13. Frontend checkpoint — Ensure all frontend tests pass": [
+      {
+        "executionId": "625aa793-b43d-40cd-b3ee-1153924b666b",
+        "chatSessionId": "sess_ade834f7-8c7f-4d27-9a0b-efa15f615adf",
+        "timestamp": 1791526191143
+      },
+      {
+        "executionId": "625aa793-b43d-40cd-b3ee-1153924b666b",
+        "chatSessionId": "sess_ade834f7-8c7f-4d27-9a0b-efa15f615adf",
+        "timestamp": 1791526400023
+      }
+    ],
+    "14.1 Write backend integration test for full CRUD lifecycle": [
+      {
+        "executionId": "4064d022-29d4-4bf4-adc1-fa32d91902c8",
+        "chatSessionId": "sess_8c227614-b955-4702-94fb-4b91841bc49d",
+        "timestamp": 1791526632782
+      }
+    ]
+  }
+}

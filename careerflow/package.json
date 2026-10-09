@@ -1,0 +1,11 @@
+{
+  "name": "careerflow-root",
+  "private": true,
+  "description": "CareerFlow MERN workspace root",
+  "scripts": {
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "test:backend": "npm test --prefix backend",
+    "test:frontend": "npx vitest --run --prefix frontend"
+  }
+}
