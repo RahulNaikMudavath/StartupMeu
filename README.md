@@ -20,9 +20,10 @@
 - [Setup & Installation](#-setup--installation)
 - [How to Run](#-how-to-run)
 - [Running the Test Suites](#-running-the-test-suites)
-- [AI Tool Usage: Kiro](#-ai-development-tool--experience-kiro)
-  - [Overview & Methodology](#overview--methodology)
-  - [3–5 Specific Tasks Accelerated by Kiro](#35-specific-tasks-accelerated-by-kiro)
+- [AI Tool Usage: Kiro](#-ai-development-tool-kiro)
+  - [Tool Selection: Code0 vs Kiro](#tool-selection-code0-vs-kiro)
+  - [AI Development Experience](#ai-development-experience)
+  - [Specific Tasks Where Kiro Was Used](#specific-tasks-where-the-ai-tool-kiro-was-used-5-key-tasks)
 - [Evaluation Checklist](#-evaluation-checklist)
 
 ---
